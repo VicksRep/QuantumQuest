@@ -1,0 +1,20 @@
+# Part 1: "Hey QuantumCat, "
+OP_PUSHDATA1 0x13 0x486579205175616e74756d4361742c20
+
+# Part 2: "this is team Dead Hashlings, "
+OP_PUSHDATA1 0x1e 0x74686973206973207465616d204465616420486173686c696e67732c20
+
+# Concatenate Part 1 and Part 2
+OP_CAT
+
+# Part 3: "Moon is our captain, "
+OP_PUSHDATA1 0x18 0x4d6f6f6e206973206f7572206361707461696e2c20
+
+# Concatenate the concatenated string with Part 3
+OP_CAT
+
+# Part 4: "and we deserve a WL"
+OP_PUSHDATA1 0x12 0x616e642077652064657365727665206120574c
+
+# Concatenate the final string with Part 4
+OP_CAT
